@@ -202,7 +202,7 @@ class Matrix(object):
                                 counter += 1
                                 
             
-            counter = m.makeZeroBottomOfThePosition(i, j, counter, output)
+            counter = m.makeZeroBelowOfThePosition(i, j, counter, output)
             i = i + 1
         return m, counter
 
@@ -242,7 +242,7 @@ class Matrix(object):
             print (f"End of making zero above of the position ({i}, {j}):")
         return counter        
             
-    def makeZeroBottomOfThePosition(self, i, j, counter = 0, output = True):
+    def makeZeroBelowOfThePosition(self, i, j, counter = 0, output = True):
         if output and self.DEBUG:
             print (f"Making zero below of the position ({i}, {j}):")
         nonzero_indexes = [] # that are below the ij pos.
