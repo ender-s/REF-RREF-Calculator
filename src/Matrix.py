@@ -244,7 +244,7 @@ class Matrix(object):
             
     def makeZeroBottomOfThePosition(self, i, j, counter = 0, output = True):
         if output and self.DEBUG:
-            print (f"Making zero bottom of the position ({i}, {j}):")
+            print (f"Making zero below of the position ({i}, {j}):")
         nonzero_indexes = [] # that are below the ij pos.
         col = self.getColumn(j)
         x = i+1
